@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Image Gallery</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="p-4 font-sans bg-gray-50">
+
+  <!-- Header -->
+  <header class="bg-blue-500 text-white p-4">
+    <h1 class="text-3xl">Grid + Flexbox Layout with Image Gallery</h1>
+  </header>
+
+  <!-- Main layout -->
+  <main class="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-4">
+
+    <!-- Section with Flexbox (spanning 2 columns on large screens) -->
+    <section class="lg:col-span-2 flex gap-4">
+      <div class="w-1/2 p-4 bg-red-200 rounded">Flexbox Item 1</div>
+      <div class="w-1/2 p-4 bg-red-400 rounded">Flexbox Item 2</div>
+    </section>
+
+    <!-- Sidebar -->
+    <aside class="bg-green-200 p-4 rounded">Sidebar</aside>
+
+  </main>
+
+  <!-- ✅ New Image Gallery Section -->
+  <section class="mt-8">
+    <h2 class="text-2xl font-bold mb-4">Image Gallery</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      <img src="https://via.placeholder.com/400" alt="Gallery 1" class="w-full h-auto rounded shadow">
+      <img src="https://via.placeholder.com/400" alt="Gallery 2" class="w-full h-auto rounded shadow">
+      <img src="https://via.placeholder.com/400" alt="Gallery 3" class="w-full h-auto rounded shadow">
+      <img src="https://via.placeholder.com/400" alt="Gallery 4" class="w-full h-auto rounded shadow">
+      <img src="https://via.placeholder.com/400" alt="Gallery 5" class="w-full h-auto rounded shadow">
+      <img src="https://via.placeholder.com/400" alt="Gallery 6" class="w-full h-auto rounded shadow">
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white p-4 mt-4 text-center">
+    <p>&copy; 2024 John Doe's Blog</p>
+  </footer>
+
+</body>
+</html>
