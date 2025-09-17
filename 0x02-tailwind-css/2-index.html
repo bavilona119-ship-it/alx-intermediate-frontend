@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Complex Grid Layout</title>
+  <link href="./src/output.css" rel="stylesheet">
+</head>
+<body class="p-4 font-sans bg-gray-50">
+
+  <!-- Header -->
+  <header class="text-center mb-6">
+    <h1 class="text-2xl font-bold">Complex Grid Layout with Nested Grids</h1>
+  </header>
+
+  <!-- Main grid -->
+  <main class="grid grid-cols-2 gap-4">
+
+    <!-- First nested grid (blue) -->
+    <div class="grid grid-cols-2 p-4 gap-2 bg-blue-200 rounded-lg shadow">
+      <div class="bg-blue-400 p-2 text-white rounded">Nested 1</div>
+      <div class="bg-blue-500 p-2 text-white rounded">Nested 2</div>
+    </div>
+
+    <!-- Second nested grid (red) -->
+    <div class="grid grid-cols-2 p-4 gap-2 bg-red-200 rounded-lg shadow">
+      <div class="bg-red-400 p-2 text-white rounded">Nested 3</div>
+      <div class="bg-red-500 p-2 text-white rounded">Nested 4</div>
+    </div>
+
+    <!-- Content blocks -->
+    <div class="bg-green-200 p-4 rounded-lg shadow">Content 3</div>
+    <div class="bg-yellow-200 p-4 rounded-lg shadow">Content 4</div>
+
+  </main>
+</body>
+</html>
